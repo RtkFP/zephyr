@@ -1,0 +1,68 @@
+/*
+ * Copyright (c) 2024 Realtek Semiconductor, Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+#include <realtek/rts5816/rts5816.dtsi>
+#include "rts5816_demoboard-pinctrl.dtsi"
+
+/ {
+	model = "Realtek rts5816_demoboard";
+	compatible = "realtek,rts5816_demoboard";
+	#address-cells = <1>;
+	#size-cells = <1>;
+
+	chosen {
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+	};
+};
+
+&clks {
+	status = "okay";
+};
+
+&reset {
+	status = "okay";
+};
+
+&gpio {
+	status = "okay";
+};
+
+&watchdog {
+	status = "okay";
+};
+
+&uart0 {
+	status = "okay";
+};
+
+&uart1 {
+	status = "okay";
+};
+
+&quadspi {
+	status = "okay";
+};
+
+&thermal {
+	status = "okay";
+};
+
+&spi0 {
+	status = "okay";
+};
+
+&spi1 {
+	status = "okay";
+};
+
+&puf {
+	status = "okay";
+};
+
+&regulator {
+	status = "okay";
+};
