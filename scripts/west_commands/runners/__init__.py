@@ -53,6 +53,7 @@ _names = [
     'qemu',
     'renode',
     'renode-robot',
+    'rtsflash',
     'silabs_commander',
     'spi_burn',
     'stm32cubeprogrammer',
