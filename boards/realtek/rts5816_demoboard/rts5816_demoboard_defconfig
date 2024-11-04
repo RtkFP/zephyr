@@ -4,8 +4,8 @@
 # enable clocks
 CONFIG_CLOCK_CONTROL=y
 
-# enable GPIO
-CONFIG_GPIO=y
+# enable reset
+CONFIG_RESET=y
 
 # enable regulator driver
 CONFIG_REGULATOR=y
