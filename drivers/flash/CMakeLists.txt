@@ -171,3 +171,5 @@ endif()
 
 # Do not use prologue and epilogue code that uses library function calls
 zephyr_library_compile_options_ifdef(CONFIG_FLASH_ANDES_QSPI_XIP -mno-save-restore)
+
+zephyr_library_sources_ifdef(CONFIG_FLASH_RTS5817_QSPI flash_rts5817_qspi.c)

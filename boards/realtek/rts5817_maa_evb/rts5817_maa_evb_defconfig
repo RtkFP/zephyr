@@ -18,3 +18,6 @@ CONFIG_GPIO=y
 # Enable watchdog
 CONFIG_WATCHDOG=y
 CONFIG_WDT_DISABLE_AT_BOOT=y
+
+# Enable flash
+CONFIG_FLASH=y
