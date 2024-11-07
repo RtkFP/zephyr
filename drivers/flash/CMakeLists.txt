@@ -166,3 +166,5 @@ if(CONFIG_SOC_FLASH_RENESAS_RA_HP)
   zephyr_library_sources(soc_flash_renesas_ra_hp.c)
   zephyr_library_sources_ifdef(CONFIG_FLASH_EX_OP_ENABLED soc_flash_renesas_ra_hp_ex_op.c)
 endif()
+
+zephyr_library_sources_ifdef(CONFIG_FLASH_RTS5817_QSPI flash_rts5817_qspi.c)
