@@ -1,0 +1,12 @@
+# Copyright (c) 2024 Realtek Semiconductor, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+description: Realtek RTS5816 flash controller
+
+compatible: "realtek,rts5816-qspi"
+
+include: [base.yaml]
+
+properties:
+  reg:
+    required: true
