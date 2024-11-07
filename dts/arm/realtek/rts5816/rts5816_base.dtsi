@@ -10,6 +10,7 @@
 #include <zephyr/dt-bindings/pinctrl/rts5816_pinctrl.h>
 #include <zephyr/dt-bindings/reset/rts5816_reset.h>
 #include <zephyr/dt-bindings/clock/rts5816_clock.h>
+#include <zephyr/dt-bindings/gpio/rts5816-gpio.h>
 
 / {
 	chosen {
