@@ -179,25 +179,12 @@
 			status = "disabled";
 		};
 
-		puf: puf@401b0000 {
-			compatible = "realtek,rts5816-puf";
-			reg = <0x401b0000 0x1000>,
-			      <0x401b4000 0x1000>,
-			      <0x401e003c 0x4>,
-			      <0x401e1000 0x4>;
-			reg-names = "sys",
-				    "cyp",
-				    "prot",
-				    "power";
-			otp-sizes = <0x300>, <0x100>;
-			clocks = <&clks RTS_FP_CLK_PUF>;
-			resets = <&reset SYS_FORCE_RST_PUF>;
-			status = "disabled";
-		};
-
 		regulator: regulator@401e1000 {
 			compatible = "realtek,rts5816-regulator";
-			reg = <0x401e1000 0x30>;
+			reg = <0x401e1000 0x30>, <0x401b0000 0x300>;
+			reg-names = "ctrl", "puf_otp";
+			clocks = <&clks RTS_FP_CLK_PUF>;
+			resets = <&reset SYS_FORCE_RST_PUF>;
 			status = "disabled";
 			dvdds {
 				regulator-min-microvolt = <1000000>;

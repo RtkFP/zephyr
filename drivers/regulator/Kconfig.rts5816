@@ -1,0 +1,19 @@
+# Copyright (c) 2024 Realtek Semiconductor, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+config REGULATOR_RTS5816
+	bool "RTS5816 Regulator Driver"
+	default y
+	depends on DT_HAS_REALTEK_RTS5816_REGULATOR_ENABLED
+	help
+	  This option enables the regulator driver for RTS5816.
+
+if REGULATOR_RTS5816
+
+config REGULATOR_RTS5816_INIT_PRIORITY
+	int "RTS5816 regulator driver init priority"
+	default 80
+	help
+	  Init priority for the RTS5816 regulator driver.
+
+endif

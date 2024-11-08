@@ -1,0 +1,13 @@
+# Copyright (c) 2024 Realtek Semiconductor, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+config SPI_RTS5816
+	bool "RTS5816 SPI Controller Driver"
+	depends on HEAP_MEM_POOL_SIZE > 0
+	depends on DT_HAS_REALTEK_RTS5816_SPI_ENABLED
+	default y
+	help
+	  This option enables the spi controller driver for RTS5816.
+	  Please note that driver uses dynamic memory allocation with
+	  k_aligned_alloc(), so CONFIG_HEAP_MEM_POOL_SIZE should be
+	  >= maximum spi buffer size according to your application.
