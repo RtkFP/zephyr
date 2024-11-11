@@ -61,3 +61,7 @@
 &spi1 {
 	status = "okay";
 };
+
+zephyr_udc0: &usb {
+	status = "okay";
+};
