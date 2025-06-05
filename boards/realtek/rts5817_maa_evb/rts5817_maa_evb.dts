@@ -49,3 +49,7 @@
 &quadspi {
 	status = "okay";
 };
+
+&regulator {
+	status = "okay";
+};
